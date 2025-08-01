@@ -20,7 +20,7 @@ def get_stock_stats(
         if data.empty:
             return {"error": f"No data found for ticker '{ticker}' in this range."}
 
-        # Return stats
+        # Return clean stats
         return {
             "ticker": ticker.upper(),
             "start_date": str(data.index[0].date()),
